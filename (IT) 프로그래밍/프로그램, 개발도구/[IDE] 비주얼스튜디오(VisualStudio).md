@@ -1,6 +1,8 @@
 # [IDE] 비주얼스튜디오(VisualStudio)
 
-# **비주얼스튜디오(VisualStudio)**
+<br><br>
+
+## **비주얼스튜디오(VisualStudio)**
 
 대표적인 마이크로소프트의 통합 개발 환경 프로그램이다.
 
@@ -16,7 +18,11 @@
 
 ---
 
+<br><br>
+
 # **비주얼스튜디오 설치하기**
+
+<br><br>
 
 1. 비주얼 스튜디오 다운로드 사이트에 접속한다.
 
@@ -25,13 +31,22 @@ Visual Studio Tools 다운로드 - Windows, Mac, Linux용 무료 설치
 Visual Studio IDE 또는 VS Code를 무료로 다운로드하세요. Windows 또는 Mac에서 Visual Studio Professional 또는 Enterprise Edition을 사용해 보세요.
 visualstudio.microsoft.com](https://visualstudio.microsoft.com/ko/downloads/)
 
+<br><br>
+<br><br>
+
 2. Community의 [무료 다운로드] 클릭하여 'VisualStudioSetup' 파일을 다운로드한다.
 
 ![https://blog.kakaocdn.net/dn/wVFEx/btrX3sEbRhB/3nqJXvFb9bhSkyVXBcepT0/img.png](https://blog.kakaocdn.net/dn/wVFEx/btrX3sEbRhB/3nqJXvFb9bhSkyVXBcepT0/img.png)
 
+<br><br>
+<br><br>
+
 3. 셋업 파일을 실행하여 설치 화면에 표시되는 [C++를 사용한 데스크톱 개발]을 선택한 후 [설치]를 클릭한다.
 
 ![https://blog.kakaocdn.net/dn/cskeKt/btrX15iI02u/yvInzPDApoOleJQ0VaH6Gk/img.png](https://blog.kakaocdn.net/dn/cskeKt/btrX15iI02u/yvInzPDApoOleJQ0VaH6Gk/img.png)
+
+<br><br>
+<br><br>
 
 4. 비주얼스튜디오 다운로드를 진행 후 완료되면 [OK]를 클릭한다.
 
@@ -39,15 +54,24 @@ visualstudio.microsoft.com](https://visualstudio.microsoft.com/ko/downloads/)
 
 ![https://blog.kakaocdn.net/dn/bzwqjB/btrX3t4hExp/OJaryKtJBADlkQoxV50LgK/img.png](https://blog.kakaocdn.net/dn/bzwqjB/btrX3t4hExp/OJaryKtJBADlkQoxV50LgK/img.png)
 
+<br><br>
+<br><br>
+
 5. 비주얼스튜디오 마이크로소프트 계정 만들기 및 로그인하기
 
 ![https://blog.kakaocdn.net/dn/OroWU/btrX4mjQO66/ED84gbpq6MOKzM5ZT6lmUK/img.png](https://blog.kakaocdn.net/dn/OroWU/btrX4mjQO66/ED84gbpq6MOKzM5ZT6lmUK/img.png)
+
+<br><br>
+<br><br>
 
 6. 비주얼스튜디오 설치 후 설치 항목을 다시 수정하려면 비주얼스튜디오 프로그램을 실행하여 [파일] - [새로 만들기] - [프로젝트]를 클릭 후 새 프로젝트 만들기 창을 연다. 스크롤을 맨 아래로 내린 후 [추가 도구 및 기능 설치]를 클릭한다.
 
 C언어 개발환경으로 제대로 구성하기 위해 재설치를 진행하겠다.
 
 ![https://blog.kakaocdn.net/dn/ruz4r/btrX172C9GX/ZiQafqUOL1lgUGZmacGYn0/img.png](https://blog.kakaocdn.net/dn/ruz4r/btrX172C9GX/ZiQafqUOL1lgUGZmacGYn0/img.png)
+
+<br><br>
+<br><br>
 
 7. 설치 화면에서 자신이 사용할 언어의 필요한 항목을 선택하여 설치한다.
 
