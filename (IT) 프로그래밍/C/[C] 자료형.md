@@ -16,8 +16,6 @@
 - char(부호 있는 1byte) : -128 ~ 127
 - unsigned char(부호 없는 1byte) : 0 ~ 255
 
-<br><br>
-
 >[!note]
 > **문자 자료형**
 > 
