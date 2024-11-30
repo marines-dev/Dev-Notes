@@ -1,5 +1,7 @@
 # [C] 표준 라이브러리 : 표준 입출력
 
+<br><br>
+
 ## 표준 입출력 라이브러리(Standard I/O Library)
 
 C언어는 운영체제와 보조기억 장치의 종류에 상관없이 보조기억 장치에 파일 입∙출력, 저장 등 사용할 수 있도록 파일 입출력 라이브러리를 제공하는데, 많은 운영체제에서 이 라이브러리를 호환한다. 
@@ -8,20 +10,28 @@ C언어는 운영체제와 보조기억 장치의 종류에 상관없이 보조
 
 - 헤더 파일 : stdio.h
 
+<br><br>
+<br><br>
+
 ## 표준 출력 함수
 
 표준 출력이란 가장 기본으로 사용하는 출력 방식으로, 시스템 마다 출력 장치의 표준 출력이 다르다. C언어에서는 가장 기본적으로 사용하는 표준 출력 함수를 제공한다.
 
 ex) 컴퓨터의 표준 출력은 ‘모니터’이다.
 
+<br><br>
+
 **단일 문자 출력하기**
 
 단일 문자를 작성하여 문자를 출력하고, 실패하면 -1을 반환한다. 이때, putc()는 여러 가지 형식을 출력할 수 있는데, stream 매개변수에 표준 출력을 의미하는 stdout 값을 사용해야 한다. putchar()은 putc()의 stdout을 생략하여 편리하게 사용할 수 있도록 만들어진 매크로 함수이다.
 
-- 함수원형 : int putc( int ch, [FILE](https://en.cppreference.com/w/c/io/FILE) *stream )
+- 함수원형 : int putc( int ch, FILE *stream )
 - 함수원형 : int putchar( int ch );
 
 ex) putchar(’A’);
+
+<br><br>
+<br><br>
 
 **단일 문자열 출력하기**
 
@@ -29,25 +39,33 @@ ex) putchar(’A’);
 
 - 함수 원형 : int puts( const char *str );
 
+<br><br>
+<br><br>
+
 **문자열 출력하기**
 
 printf()는 문자열 뿐만 아니라 변수의 값을  원하는 형식으로 출력할 수 있으며, % 서식 지정 키워드를 사용하여 변수의 갯수의 짝을 맞춰서 원하는 개수만큼 명시할 수 있다.
 
 - 함수 원형 : int printf( const char *format, ... );
 
-<aside>
-💡 **% 서식 지정자 키워드**
+<br><br>
 
-- %d(정수), %f(실수), %c(문자), %s(문자열) 등
-- 서식 키워드 참고용 사이트
-[https://en.cppreference.com/w/c/io/fprintf](https://en.cppreference.com/w/c/io/fprintf)
-</aside>
+>[!note]
+> **% 서식 지정자 키워드**
+> 
+> - %d(정수), %f(실수), %c(문자), %s(문자열) 등
+> - 서식 키워드 참고용 사이트
+> [https://en.cppreference.com/w/c/io/fprintf](https://en.cppreference.com/w/c/io/fprintf)
 
-<aside>
-💡 **제어 코드**
+<br><br>
 
-- \n(다음줄로 이동), \r(해당 줄 처음으로 이동), \t(한 탭 이동), \'(작은 따옴표), \"(큰 따옴표) 등
-</aside>
+>[!note]
+> **제어 코드**
+> 
+> - \n(다음줄로 이동), \r(해당 줄 처음으로 이동), \t(한 탭 이동), \'(작은 따옴표), \"(큰 따옴표) 등
+
+<br><br>
+<br><br>
 
 ## 표준 입력 함수
 
@@ -55,13 +73,16 @@ printf()는 문자열 뿐만 아니라 변수의 값을  원하는 형식으로 
 
 ex) 컴퓨터의 키보드는 입력 완료를 의미하는 [Enter]키를 누를 때까지 해당 함수가 완료되지 않는다.
 
-<aside>
-💡 **rewind()**
+<br><br>
 
-입력 버퍼에 남아있는 입력 정보를 모두 지우고 싶을 때 입력 버퍼의 데이터를 초기화하는 함수이다. *stream 매개변수로 stdin 포인터를 넣으면 장치에서 입력한 값을 얻을 수 있다.
+>[!note]
+> **rewind()**
+> 
+> 입력 버퍼에 남아있는 입력 정보를 모두 지우고 싶을 때 입력 버퍼의 데이터를 초기화하는 함수이다. *stream 매개변수로 stdin 포인터를 넣으면 장치에서 입력한 값을 얻을 수 있다.
+> 
+> - 함수 원형 : void rewind( [FILE](http://en.cppreference.com/w/c/io) *stream );
 
-- 함수 원형 : void rewind( [FILE](http://en.cppreference.com/w/c/io) *stream );
-</aside>
+<br><br>
 
 **단일 문자 입력하기**
 
@@ -69,6 +90,8 @@ ex) 컴퓨터의 키보드는 입력 완료를 의미하는 [Enter]키를 누
 
 - 함수 원형 : int getchar(void);
 - 함수 원형 : int getc( [FILE](https://en.cppreference.com/w/c/io/FILE) *stream );
+
+<br><br>
 
 **예제1) getchar() 함수를 사용하여 문자 입력 받기**
 
@@ -85,6 +108,8 @@ int main()
 ```
 
 ![https://blog.kakaocdn.net/dn/bANX2y/btqxC5CCaH6/Kel6L7umjsY5QG7LvEbSOK/img.png](https://blog.kakaocdn.net/dn/bANX2y/btqxC5CCaH6/Kel6L7umjsY5QG7LvEbSOK/img.png)
+
+<br><br>
 
 **예제2) getchar() 함수를 사용하여 문자 두번 입력 받기**
 
@@ -105,8 +130,9 @@ int main()
     return 0;
 }
 ```
+![%5BC%5D%20표준%20라이브러리%20-%20표준%20입출력](https://github.com/marines-dev/Dev-Notes/raw/main/이미지%20참조/%5BC%5D%20표준%20라이브러리%20-%20표준%20입출력.png)
 
-![Untitled](Untitled.png)
+<br><br>
 
 **예제3) getchar() 함수로 문자를 입력 받고 표준 입력 버퍼 초기화하기**
 
@@ -128,6 +154,9 @@ int main()
 
 ![https://blog.kakaocdn.net/dn/sshIy/btqxBQ0t9HM/K14182IE0JmsUFnIsM2IW1/img.png](https://blog.kakaocdn.net/dn/sshIy/btqxBQ0t9HM/K14182IE0JmsUFnIsM2IW1/img.png)
 
+<br><br>
+<br><br>
+
 **단일 문자열 입력받기**
 
 단일 문자열을 입력 받는다. 한번에 여러 개의 문자를 입력 받을 수 있으며 [Enter]키를 입력할 때까지 입력한 모든 문자를 하나의 문자열로 간주한다. gets()는 [Enter]키는 입력 완료의 기준으로만 사용하기 때문에 문자열에 포함시키지 않고 [Enter]키를 입력한 위치에 0(NULL문자)이 들어간다. fgets()는 파일에서 데이터를 읽어오는데, *stream 매개변수의 표준 입력 장치인 stdin을 사용하면 입력 버퍼에서 문자열을 받아올 수 있게 되는데, gets()와 함께 동작하게 된다. gets()가 정의되지 않다는 컴파일 오류가 발생하면 fgets()을 사용하면 된다.
@@ -135,10 +164,14 @@ int main()
 - 함수 원형 : char *gets( char *str );
 - 함수 원형 : char *fgets( char *str, int count, [FILE](https://en.cppreference.com/w/c/io/FILE) *stream );
 
-<aside>
-💡 **gets() 사용시 주의점**
+<br><br>
 
-입력을 받는 중에 [Ctrl] + [C]키를 누르면 표준 입력이 취소되고 프로그램이 중지되는데, 이때, 입력 취소를 처리하지 않을 경우 문자열에 복사되지 않은 상태로 gets()가 종료되어 이상한 값이 출력된다. 그러므로 gets()의 반환 값은 사용자 입력이 정상적으로 완료되지 않으면 null값을 반환하기 때문에 사용자가 정상적으로 입력을 완료하지 않은 상황에 대처하는 코드를 구성할 수 있어야 한다.
+>[!note]
+> **gets() 사용시 주의점**
+> 
+> 입력을 받는 중에 [Ctrl] + [C]키를 누르면 표준 입력이 취소되고 프로그램이 중지되는데, 이때, 입력 취소를 처리하지 않을 경우 문자열에 복사되지 않은 상태로 gets()가 종료되어 이상한 값이 출력된다. 그러므로 gets()의 반환 값은 사용자 입력이 정상적으로 완료되지 않으면 null값을 반환하기 때문에 사용자가 정상적으로 입력을 완료하지 않은 상황에 대처하는 코드를 구성할 수 있어야 한다.
+
+<br><br>
 
 **예제4) fgets() 함수로 문자열을 입력 받다가 입력 취소 처리하기**
 
@@ -164,7 +197,7 @@ int main()
 
 ![https://blog.kakaocdn.net/dn/wEbwV/btqxDtwsXPD/KRSnjOECSyFuU6iHrfMTYk/img.png](https://blog.kakaocdn.net/dn/wEbwV/btqxDtwsXPD/KRSnjOECSyFuU6iHrfMTYk/img.png)
 
-</aside>
+<br><br>
 
 **예제5) gets() 함수 직접 구현하기**
 
@@ -189,13 +222,18 @@ bool GetString(char * cBuffer, int nLimit)
 }
 ```
 
+<br><br>
+<br><br>
+
 **문자열 입력하기**
 
 scanf()는 서식 지정자 키워드를 사용하여 문자, 문자열 뿐만 아니라 모든 형식을 받을 수 있도록 입력을 제공한다. 
 
-한 번의 함수 호출로 여러 개의 값을 동시에 입력 받기 위해서 포인터에 &연산자로 변수의 주소를 저장하여 입력 값을 받는다. 서식 키워드(%)에 맞게 변수의 주소를 넘겨주어 입력 후 [Enter]키를 누르면  해당 변수에 입력 값을 저장한다. 한 번에 여러 개의 데이터를 입력할 때도 [Enter], [spase](공백)키로도 입력의 구별이 가능한데, 주의할 점은 %s키워드를 사용하여 문자열을 입력할 때 중간에 공백이 들어가면, 첫 번째 공백까지만 출력하고 나머지는 문자들은 입력 버퍼에 그대로 남게 되어 다음 표준 입력 함수에 영향을 주게 된다. 그러므로 입력할 문자열에 공백이 포함된다면 scanf() 대신에 gets()를 사용하자. 또한 잘못된 입력으로 scanf()가 실패했을 때 입력 버퍼에 저장되어 있는 값들은 rewind()로 입력 버퍼를 비워야 무한 출력이 되지 않는다. 입력 오류를 정확하게 처리하기 위해서 데이터를 입력 받기 전, 후에 rewind() 함수를 적절하게 사용하여 표준 입력 버퍼를 비우는 것이 좋다.
+한 번의 함수 호출로 여러 개의 값을 동시에 입력 받기 위해서 포인터에 &연산자로 변수의 주소를 저장하여 입력 값을 받는다. 서식 키워드(%)에 맞게 변수의 주소를 넘겨주어 입력 후 [Enter]키를 누르면  해당 변수에 입력 값을 저장한다. 한 번에 여러 개의 데이터를 입력할 때도 [Enter], [spase] (공백) 키로도 입력의 구별이 가능한데, 주의할 점은 %s키워드를 사용하여 문자열을 입력할 때 중간에 공백이 들어가면, 첫 번째 공백까지만 출력하고 나머지는 문자들은 입력 버퍼에 그대로 남게 되어 다음 표준 입력 함수에 영향을 주게 된다. 그러므로 입력할 문자열에 공백이 포함된다면 scanf() 대신에 gets()를 사용하자. 또한 잘못된 입력으로 scanf()가 실패했을 때 입력 버퍼에 저장되어 있는 값들은 rewind()로 입력 버퍼를 비워야 무한 출력이 되지 않는다. 입력 오류를 정확하게 처리하기 위해서 데이터를 입력 받기 전, 후에 rewind() 함수를 적절하게 사용하여 표준 입력 버퍼를 비우는 것이 좋다.
 
 - 함수원형 : int scanf( const char *format, ... );
+
+<br><br>
 
 **예제6) scanf() 함수로 값 입력하기**
 
