@@ -1,5 +1,7 @@
 # [C++] 함수 다중 정의(Function Overloading)
 
+<br><br>
+
 # 함수 다중 정의(Function Overloading)
 
 C++은 함수 원형이 다른 동일한 이름의 함수를 다중으로 정의하여 사용할 수 있는데, 이때 주의할 점은 함수 원형의 매개변수(자료형, 개수)가 다를 경우에만 정의할 수 있으며, 함수의 반환형으로는 구분할 수 없다.
@@ -19,6 +21,8 @@ void OverloadFunc (int nParam);  //(X)
 int OverloadFunc (int nParam);  //(X)
 
 char OverloadFunc (int nParam); //(X)
+
+<br><br>
 
 **예제1) 함수 다중 정의하기**
 
