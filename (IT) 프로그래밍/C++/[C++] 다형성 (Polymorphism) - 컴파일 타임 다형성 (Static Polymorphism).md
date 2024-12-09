@@ -13,7 +13,9 @@ C++에서는 다형성을 컴파일 타임 다형성과 런타임 다형성 두 
 
 # **컴파일 타임 다형성 (Static Polymorphism)**
 
-컴파일 타임 다형성은 함수 오버로딩(Overloading), 연산자 오버로딩(Operator Overloading)을 통해 구현된다. 이 방식은 함수나 연산자의 호출이 컴파일 시점에 결정되는 다형성이다.
+컴파일 타임 다형성은 함수 오버로딩(Overloading), 연산자 오버로딩(Operator Overloading)을 통해 구현된다. 
+
+이 방식은 정적 바인딩(Static Binding)으로, 컴파일 시점에 함수나 연산자의 호출이 결정되는 다형성이다.
 
 <br><br>
 
