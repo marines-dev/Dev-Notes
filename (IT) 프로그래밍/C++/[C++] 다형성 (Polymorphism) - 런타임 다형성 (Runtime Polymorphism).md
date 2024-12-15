@@ -1,8 +1,13 @@
 # [C++] 다형성 (Polymorphism) : 런타임 다형성 (Runtime Polymorphism)
 
+<br><br>
+
 # 런타임 다형성 (Runtime Polymorphism)
 
 런타임 다형성은 동적 바인딩(Dynamic Binding)을 기반으로, 프로그램 실행 중에 실제 객체 타입에 따라 함수가 선택되는 다형성이다. 이는 추상 자료형과 포인터(*) 또는 참조자(&)를 활용하여 구현된다.
+
+<br><br>
+<br><br>
 
 ### **추상 자료형 (Abstract Data Type, ADT)**
 
